@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+ 	{{ principal }}
+ 	{{ compresion }}
+ 	<figure>
+ 		<img src="/uncompressed.jpg" alt="Imagen sin compresion">
+ 		<figcaption> Tamaño de la imagen sin comprimir: {{ tam1.size}} bytes</figcaption>
+ 	</figure>
+ 	<figure>
+ 		<img src="/compressed_image.jpg" alt="Imagen comprimida">
+ 		<figcaption> Tamaño de la imagen comprimida: {{ tam2.size }} bytes</figcaption>
+ 	</figure>
+    
+
+{% endblock %}

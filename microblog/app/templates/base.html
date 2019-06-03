@@ -1,0 +1,15 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Escuela Superior de Cómputo</title>
+      {% else %}
+      <title>Welcome to Microblog</title>
+      {% endif %}
+    </head>
+    <body>
+        <h1> Proyecto Final - Matmáticas Avanzadas para la Ingeniería</h1>
+        <hr>
+        <h2> Compresor de imágenes .jpg/.jpeg </h2>
+        {% block content %}{% endblock %}
+    </body>
+</html>
